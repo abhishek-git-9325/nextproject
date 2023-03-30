@@ -6,7 +6,8 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <>
-    <header className='container mx-auto z-10 relative flex justify-between items-center px-5'>
+    <header>
+      <div className='header-container container mx-auto z-10 relative flex justify-between items-center px-5'>
           <div className='logo-area'>
           <Link href="/" className='flex justify-center py-5'>
           <Image src="/blog-logo.png" alt="logo" width="80" height="80" />
@@ -28,6 +29,7 @@ export default function Header() {
               </li>
             </ul>
           </nav>
+          </div>
         </header>
     </>
   )
